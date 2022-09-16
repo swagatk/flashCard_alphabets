@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.flashcard_alphabets" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlashCard_alphabets"
+        tools:targetApi="31" >
+        <activity
+            android:name=".alphabet1"
+            android:exported="false" />
+        <activity
+            android:name=".alphabet2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".alphabet3" />
+        <activity android:name=".alphabet4" />
+        <activity android:name=".alphabet5" />
+        <activity android:name=".alphabet6" />
+        <activity android:name=".alphabet7" />
+        <activity android:name=".alphabet8" />
+        <activity android:name=".alphabet9" />
+        <activity android:name=".alphabet10" />
+        <activity android:name=".alphabet11" />
+        <activity android:name=".alphabet12" />
+        <activity android:name=".alphabet13" />
+        <activity android:name=".alphabet14" />
+        <activity android:name=".alphabet15" />
+        <activity android:name=".alphabet16" />
+        <activity android:name=".alphabet17" />
+        <activity android:name=".alphabet18" />
+        <activity android:name=".alphabet19" />
+        <activity android:name=".alphabet20" />
+        <activity android:name=".alphabet21" />
+        <activity android:name=".alphabet22" />
+        <activity android:name=".alphabet23" />
+        <activity android:name=".alphabet24" />
+        <activity android:name=".alphabet25" />
+        <activity android:name=".alphabet26" />
+    </application>
+
+</manifest>
