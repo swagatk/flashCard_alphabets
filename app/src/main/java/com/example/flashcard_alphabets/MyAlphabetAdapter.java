@@ -1,6 +1,8 @@
 package com.example.flashcard_alphabets;
 
 import android.content.Context;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +14,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.Locale;
+import java.util.concurrent.TimeoutException;
+
 
 public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.ViewHolder> {
 
-    private alphabetData [] myAlphabets;
-    private Context context;
+    private final alphabetData [] myAlphabets;
+    private final Context context;
+    private TextToSpeech mTTS;
+
+
+
 
     public MyAlphabetAdapter(alphabetData [] myAlphabets, Context activity){
         this.myAlphabets = myAlphabets;
@@ -38,19 +47,48 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
         holder.alphaText.setText(myAlphabetData.getAlphabetName());
         holder.alphaImage.setImageResource(myAlphabetData.getAlphabetImage() );
 
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, myAlphabetData.getAlphabetName(), Toast.LENGTH_SHORT).show();
+                String text_to_speak = myAlphabetData.getAlphabetName();
+                //Toast.makeText(context, myAlphabetData.getAlphabetName(), Toast.LENGTH_LONG).show();
+
+                mTTS = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
+                    @Override
+                    public void onInit(int status) {
+                        if (status == TextToSpeech.SUCCESS){
+                            int result = mTTS.setLanguage(Locale.UK);
+                            speakText(text_to_speak);
+                            if (result == TextToSpeech.LANG_MISSING_DATA
+                                    || result == TextToSpeech.LANG_NOT_SUPPORTED){
+                                Log.e("TTS", "Language not supported");
+                            }else {
+                                // put a sound button
+                            }
+                        }
+                        else {
+                            Log.e("TTS", "Initialization Failed");
+                        }
+                    }
+                });
             }
+            private void speakText(String text){
+                float pitch = 1.0F;
+                float speed = 1.0F;
+                mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+            }
+
         });
 
     }
 
     @Override
-    public int getItemCount() {
-                            return myAlphabets.length;
-                                                      }
+    public int getItemCount()
+    {
+        return myAlphabets.length;
+
+    }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView alphaImage;
@@ -60,5 +98,23 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
             alphaImage = itemView.findViewById(R.id.imageview3);
             alphaText = itemView.findViewById(R.id.textview3);
         }
+    }
+
+
+    private void speak(String text_to_speak, float pitch, float speed, TextToSpeech mTTs){
+        TextToSpeech localmTTs = mTTs;
+        localmTTs.setPitch(pitch);
+        localmTTs.setSpeechRate(speed);
+        localmTTs.speak(text_to_speak, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
+    @Override
+    public void onDetachedFromRecyclerView(@NonNull RecyclerView recyclerView) {
+        if (mTTS != null) {
+            mTTS.stop();
+            mTTS.shutdown();
+        }
+        super.onDetachedFromRecyclerView(recyclerView);
+
     }
 }

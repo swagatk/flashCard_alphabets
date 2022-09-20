@@ -4,29 +4,37 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     private ListView alphaListView;
-    String alphabets[] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
-                "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
-                "W", "X", "Y", "Z"};
+    String[] alphabets = {"A, a", "B, b", "C, c", "D, d", "E, e", "F, f", "G, g", "H, h", "I, i",
+                "J, j", "K, k",
+                "L, l", "M, m", "N, n", "O, o", "P, p", "Q, q", "R, r", "S, s", "T, t", "U, u", "V, v",
+                "W, w", "X, x", "Y, y", "Z, z"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        alphaListView = (ListView) findViewById(R.id.alphaList);
+        alphaListView = findViewById(R.id.alphaList);
         ArrayAdapter <String> arrayAdapter = new ArrayAdapter<String>(
                 getApplicationContext(),
-                android.R.layout.simple_list_item_1,
+                R.layout.main_textview,
                 alphabets
         );
         alphaListView.setAdapter(arrayAdapter);
@@ -118,6 +126,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 }
