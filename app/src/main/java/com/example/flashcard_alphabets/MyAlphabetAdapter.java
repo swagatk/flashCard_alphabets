@@ -36,6 +36,7 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
     @Override
     public com.example.flashcard_alphabets.MyAlphabetAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        //View view = layoutInflater.inflate(R.layout.alphabet3_card, parent, false);
         View view = layoutInflater.inflate(R.layout.alphabet3_card, parent, false);
         MyAlphabetAdapter.ViewHolder viewHolder = new MyAlphabetAdapter.ViewHolder(view);
         return viewHolder;
