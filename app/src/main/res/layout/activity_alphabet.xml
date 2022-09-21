@@ -24,7 +24,7 @@
         android:elevation="6dp"
         android:src="@drawable/ic_forward"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <!--com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fabBack"
@@ -32,6 +32,15 @@
         android:layout_margin="16dp"
         app:fabSize="normal"
         android:elevation="6dp"
-        android:src="@drawable/ic_arrow_back"/>
+        android:src="@drawable/ic_arrow_back"/-->
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabUp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        android:elevation="6dp"
+        android:src="@drawable/ic_arrow_up"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

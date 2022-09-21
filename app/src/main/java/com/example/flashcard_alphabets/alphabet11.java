@@ -41,11 +41,11 @@ public class alphabet11 extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton fabBack = findViewById(R.id.fabBack);
+        FloatingActionButton fabBack = findViewById(R.id.fabUp);
         fabBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(alphabet11.this, alphabet10.class));
+                startActivity(new Intent(alphabet11.this, MainActivity.class));
             }
         });
     }

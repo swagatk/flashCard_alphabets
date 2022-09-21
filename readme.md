@@ -12,4 +12,4 @@ The APK file is available under `app/release/` folder. Click [here](app/release/
 
 ### Tests 
 - The app has been tested to work properly on Motorolla G7 Power running Android 10 os.
-- Sound does not seem to be working on Fire 7 table running on Fire OS 8.3.1.2 which is built on Android 10.
+- The app also works fine on Fire 7 table running on Fire OS 8.3.1.2.
