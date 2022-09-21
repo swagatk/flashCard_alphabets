@@ -8,7 +8,7 @@ I am using the following capabilities here:
 - floating action buttons for navigation
 - Text to speech interface
 
-The APK file is available under `app/release/` folder. Click [here](app/release/app-release.apk)
+The APK file is available under `app/release/` folder. Click [here](app/release/app-release.apk) to download the APK file.
 
 ### Tests 
 The app has been tested on Android 10.
