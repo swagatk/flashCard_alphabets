@@ -11,5 +11,5 @@ I am using the following capabilities here:
 The APK file is available under `app/release/` folder. Click [here](app/release/app-release.apk) to download the APK file.
 
 ### Tests 
-The app has been tested on Android 10.
-Sound does not seem to be working on Fire 7 table running on Fire OS 8.3.1.2 which is built on Android 10.
+- The app has been tested to work properly on Motorolla G7 Power running Android 10 os.
+- Sound does not seem to be working on Fire 7 table running on Fire OS 8.3.1.2 which is built on Android 10.
