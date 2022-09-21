@@ -8,3 +8,8 @@ I am using the following capabilities here:
 - floating action buttons for navigation
 - Text to speech interface
 
+The APK file is available under `app/release/` folder. Click [here](app/release/app-release.apk)
+
+### Tests 
+The app has been tested on Android 10.
+Sound does not seem to be working on Fire 7 table running on Fire OS 8.3.1.2 which is built on Android 10.
