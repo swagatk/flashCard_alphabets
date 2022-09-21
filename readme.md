@@ -1,8 +1,10 @@
 # Alphabet Flashcards
-A simple flashcard application. 
+A simple alphabet flashcard application for toddlers.
 
 I am using the following capabilities here:
 - listview
 - recyclerview
-- cardview
-- 
+- card view
+- floating action buttons for navigation
+- Text to speech interface
+

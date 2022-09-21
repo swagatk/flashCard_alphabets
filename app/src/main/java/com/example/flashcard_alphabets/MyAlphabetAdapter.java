@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,7 +37,7 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         //View view = layoutInflater.inflate(R.layout.alphabet3_card, parent, false);
         View view = layoutInflater.inflate(R.layout.alphabet3_card, parent, false);
-        MyAlphabetAdapter.ViewHolder viewHolder = new MyAlphabetAdapter.ViewHolder(view);
+        MyAlphabetAdapter.ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
 
@@ -64,8 +63,6 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
                             if (result == TextToSpeech.LANG_MISSING_DATA
                                     || result == TextToSpeech.LANG_NOT_SUPPORTED){
                                 Log.e("TTS", "Language not supported");
-                            }else {
-                                // put a sound button
                             }
                         }
                         else {
@@ -77,7 +74,9 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
             private void speakText(String text){
                 float pitch = 1.0F;
                 float speed = 1.0F;
-                mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                mTTS.setPitch(pitch);
+                mTTS.setSpeechRate(speed);
+                mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
             }
 
         });
@@ -91,7 +90,7 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
 
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public static class ViewHolder extends RecyclerView.ViewHolder{
         ImageView alphaImage;
         TextView alphaText;
         public ViewHolder(@NonNull View itemView) {
@@ -99,14 +98,6 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
             alphaImage = itemView.findViewById(R.id.imageview3);
             alphaText = itemView.findViewById(R.id.textview3);
         }
-    }
-
-
-    private void speak(String text_to_speak, float pitch, float speed, TextToSpeech mTTs){
-        TextToSpeech localmTTs = mTTs;
-        localmTTs.setPitch(pitch);
-        localmTTs.setSpeechRate(speed);
-        localmTTs.speak(text_to_speak, TextToSpeech.QUEUE_FLUSH, null);
     }
 
     @Override
