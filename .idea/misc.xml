@@ -5,6 +5,8 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/abc_splash_images.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1405" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1695" />
         <entry key="app/src/main/res/layout/activity_activity.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_alphabet.xml" value="0.1824074074074074" />
@@ -21,6 +23,7 @@
         <entry key="app/src/main/res/layout/alphabet_fab.xml" value="0.1" />
         <entry key="app/src/main/res/layout/floating_button_layout.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/main_textview.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/splash_screen.xml" value="0.17218543046357615" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1695" />
       </map>

@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">flashCard_alphabets</string>
+    <string name="app_name">Alphabet FlashCard</string>
+    <string name="splash_logo"> Learn ABCs with Flash cards</string>
+    <string name="splash_tag1"> ABC Flash Cards </string>
+    <string name="splash_tag2"> Its Fun to Learn </string>
 </resources>

@@ -52,6 +52,11 @@
         <activity android:name=".alphabet24" />
         <activity android:name=".alphabet25" />
         <activity android:name=".alphabet26" />
+        <activity android:name=".AlphabetList" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
     <queries>

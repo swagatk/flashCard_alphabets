@@ -45,7 +45,7 @@ public class alphabet11 extends AppCompatActivity {
         fabBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(alphabet11.this, MainActivity.class));
+                startActivity(new Intent(alphabet11.this, AlphabetList.class));
             }
         });
     }

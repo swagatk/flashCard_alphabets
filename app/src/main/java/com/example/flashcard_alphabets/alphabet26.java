@@ -36,7 +36,7 @@ public class alphabet26 extends AppCompatActivity {
         fabFwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(alphabet26.this, MainActivity.class));
+                startActivity(new Intent(alphabet26.this, AlphabetList.class));
             }
         });
 
@@ -44,7 +44,7 @@ public class alphabet26 extends AppCompatActivity {
         fabBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(alphabet26.this, MainActivity.class));
+                startActivity(new Intent(alphabet26.this, AlphabetList.class));
             }
         });
     }
