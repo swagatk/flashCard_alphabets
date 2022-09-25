@@ -23,8 +23,10 @@ public class alphabet3 extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         alphabetData [] myAlphabetData = new alphabetData[]{
+                new alphabetData("candle", R.drawable.candle),
                 new alphabetData("car", R.drawable.car),
                 new alphabetData("cat", R.drawable.cat),
+                new alphabetData("cow", R.drawable.cow),
                 new alphabetData("cup", R.drawable.cup),
         };
 

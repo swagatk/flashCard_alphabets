@@ -24,6 +24,7 @@ public class alphabet1 extends AppCompatActivity {
 
 
         alphabetData [] myAlphabetData = new alphabetData[]{
+                new alphabetData("Aeroplane", R.drawable.aeroplane),
                 new alphabetData("Ant", R.drawable.ant),
                 new alphabetData("Apple", R.drawable.apple),
                 new alphabetData("Avocado", R.drawable.avocado),

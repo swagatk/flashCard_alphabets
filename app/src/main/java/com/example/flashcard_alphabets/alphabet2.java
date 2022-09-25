@@ -27,6 +27,8 @@ public class alphabet2 extends AppCompatActivity {
                 new alphabetData("Ball", R.drawable.ball),
                 new alphabetData("Balloon", R.drawable.balloon),
                 new alphabetData("Banana", R.drawable.banana),
+                new alphabetData("Bear", R.drawable.bear),
+                new alphabetData("Bus", R.drawable.bus),
         };
 
         MyAlphabetAdapter myAlphabetAdapter = new MyAlphabetAdapter(myAlphabetData, alphabet2.this);

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/db_background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Alphabets"
+        android:textSize="20sp"
+        android:shadowColor="@color/gray"
+        android:elevation="10dp"
+        android:id="@+id/btnAlphabets"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Numbers"
+        android:textSize="20sp"
+        android:shadowColor="@color/gray"
+        android:elevation="10dp"
+        android:layout_below="@+id/btnAlphabets"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnNumbers"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Shapes"
+        android:textSize="20sp"
+        android:shadowColor="@color/gray"
+        android:elevation="10dp"
+        android:layout_below="@+id/btnNumbers"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnShapes"/>
+
+
+</RelativeLayout>
