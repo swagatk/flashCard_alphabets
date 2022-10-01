@@ -55,6 +55,7 @@
         <activity android:name=".alphabet26" />
         <activity android:name=".AlphabetList" />
         <activity android:name=".Dashboard" />
+        <activity android:name=".AlphaHome"/>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -23,7 +23,7 @@ public class Dashboard extends AppCompatActivity {
         btnAlphabet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, AlphabetList.class);
+                Intent intent = new Intent(Dashboard.this, AlphaHome.class);
                 startActivity(intent);
             }
         });

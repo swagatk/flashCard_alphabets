@@ -16,11 +16,13 @@
         <entry key="app/src/main/res/layout/activity_alphabet4.xml" value="0.3880208333333333" />
         <entry key="app/src/main/res/layout/activity_listview.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/alpha_item_view.xml" value="0.33" />
         <entry key="app/src/main/res/layout/alphabet1_card.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/alphabet2_card.xml" value="0.21481481481481482" />
         <entry key="app/src/main/res/layout/alphabet3_card.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/alphabet4_card.xml" value="0.3880208333333333" />
         <entry key="app/src/main/res/layout/alphabet_fab.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/alphabet_home_grid.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/dashboard.xml" value="0.1" />
         <entry key="app/src/main/res/layout/floating_button_layout.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/main_textview.xml" value="0.1" />

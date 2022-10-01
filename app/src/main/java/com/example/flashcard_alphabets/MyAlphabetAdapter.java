@@ -77,12 +77,7 @@ public class MyAlphabetAdapter extends RecyclerView.Adapter<MyAlphabetAdapter.Vi
                 float speed = 1.0F;
                 mTTS.setPitch(pitch);
                 mTTS.setSpeechRate(speed);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
-                }
-                else {
-                    mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-                }
+                mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
             }
 
         });
