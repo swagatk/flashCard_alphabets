@@ -43,7 +43,7 @@ public class alphabet4 extends AppCompatActivity {
         fabBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(alphabet4.this, AlphabetList.class));
+                startActivity(new Intent(alphabet4.this, AlphaHome.class));
             }
         });
     }
