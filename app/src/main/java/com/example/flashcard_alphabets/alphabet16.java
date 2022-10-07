@@ -49,5 +49,14 @@ public class alphabet16 extends AppCompatActivity {
                 startActivity(new Intent(alphabet16.this, AlphaHome.class));
             }
         });
+
+
+        FloatingActionButton fabHome = findViewById(R.id.fabHome);
+        fabHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(alphabet16.this, Dashboard.class));
+            }
+        });
     }
 }

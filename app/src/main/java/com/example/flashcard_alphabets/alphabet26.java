@@ -36,7 +36,7 @@ public class alphabet26 extends AppCompatActivity {
         fabFwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(alphabet26.this, AlphabetList.class));
+                startActivity(new Intent(alphabet26.this, alphabet1.class));
             }
         });
 
@@ -45,6 +45,14 @@ public class alphabet26 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(alphabet26.this, AlphaHome.class));
+            }
+        });
+
+        FloatingActionButton fabHome = findViewById(R.id.fabHome);
+        fabHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(alphabet26.this, Dashboard.class));
             }
         });
     }
